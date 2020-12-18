@@ -1,139 +1,139 @@
-<h1>First</h1>
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h2>Develop</h2>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h3>test</h3>
-<h1>Topics</h1>
-<h2>w8</h2>
-<p><img alt="" height="681" src="/images/kmol_env.png" width="600"/></p>
-<h2>W9</h2>
-<h1>hw1</h1>
-<h2>u1</h2>
-<p id="N10654" lang="">PC Hardware is an online course, where the content will be presented in the form of both text and activities.</p>
-<p id="N10657" lang="">While you will have more flexibility than in a traditional course, you will also have more responsibility for your own learning. You will need to:</p>
-<ul lang="">
-<li lang="">Plan how to work through each unit.</li>
-<li lang="">Determine how to use the various features of the course to help you learn.</li>
-<li lang="">Decide when you need to seek additional support.</li>
-</ul>
-<div class="section" id="N10666">
-<div class="sectionContain">
-<h3 contenteditable="true" lang=""><span title="Quick scroll up">What You Need to Know About the Course</span></h3>
-<p id="N1066D" lang="">This course contains multiple modules. Each module has features designed to support you as an independent learner, including:</p>
-<ul lang="">
-<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Objectives:</em></em><span> </span>These are descriptions of what you should be able to do at the end of a section. A Learning Objective will allow you to direct your learning efforts and enable you to monitor your progress as you explore the content and engage in the activities.</li>
-<li lang=""><em class="bold" lang=""><em class="italic" lang="">Explanatory Content:</em></em><span> </span>This is the informational “meat” of every chapter. Consisting of short passages of text with information, examples, images, and explanations, this explanatory content contains pieces such as:
-<ul lang="">
-<li lang=""><em class="italic" lang="">Walk-throughs:</em><span> </span>These are videos embedded in the pages to exemplify the concepts you are exploring. They may provide a more detailed explanation of a topic or guide you through the steps of a process.</li>
-<li lang=""><em class="italic" lang="">Examples:</em><span> </span>Designed to illustrate specific applications of the skills and learning objectives that the course supports you to achieve.</li>
-<li lang=""><em class="italic" lang="">Labs:</em><span> </span>Simulations and lab activities designed to give you an opportunity to interact with various hardware elements.</li>
-<li lang=""><em class="italic" lang="">Many Students Wonder sidebars:</em><span> </span>These sidebars serve two purposes: (1) to give a quick review of concepts, such as "highly specialized input devices," that are used in the PC Hardware material and (2) to provide additional material or background information that you may find surprising and interesting but that is not going to be assessed in the Quiz.</li>
-</ul>
-</li>
-<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Activities:</em></em><span> </span>There are different types of activities interspersed throughout the course. They include:
-<ul lang="">
-<li lang=""><em class="italic" lang="">Learn By Doing activities:</em><span> </span>Learn By Doing activities follow the short explanations and examples. These activities give you the chance to investigate and practice key ideas. Learn By Doing activities have hints and feedback to guide you if you need it.</li>
-<li lang=""><em class="italic" lang="">Did I Get This? activities:</em><span> </span>Did I Get This? activities are your chance to do a quick "self-check." These activities do not have hints, and often follow a Learn by Doing activity so that you can determine if you understand the key ideas. This will help you make sure you are ready for graded activities.</li>
-<li lang=""><em class="italic" lang="">Quizzes:</em><span> </span>These are short assignments that are graded. There is a Quiz at the end of each Module. The Quiz will show you and your instructor how well you understand the key concepts. If you read the information and do the activities in each Module, you should be ready for the Quiz.</li>
-</ul>
-</li>
-<li lang=""><em class="bold" lang=""><em class="italic" lang="">Metacognitive Activities:</em></em><span> </span>These activities are designed to support your development as an independent learner, encouraging you to reflect on your progress and plan for continuing success. These activities include:
-<ul lang="">
-<li lang=""><em class="italic" lang="">My Response activities:</em><span> </span>These short activities are located at the end of the module; they encourage you to reflect on your progress through the module and estimate how well you believe you've attained the module's learning objectives. These activities also provide a place to share continuing questions and areas of difficulty (if you're using the course in conjunction with an instructor, your questions will be shared with your instructor).</li>
-<li lang=""><em class="italic" lang="">Checkpoints:</em><span> </span>These activities are located across the course after sections of content that can be particularly challenging or require additional practice. These metacognitive<span> </span><span class="term" lang="">checkpoints</span>encourage you to review your progress so far and assess yourself: are you ready to continue, or do you believe you need additional materials, practice, or self-assessment? If you feel that you're not ready to proceed, these checkpoints provide links to additional learning materials.</li>
-</ul>
-</li>
-</ul>
-<h2>About These Materials</h2>
-</div>
-</div>
-<div class="section" id="N106D6">
-<div class="sectionContain">
-<p id="N106DA" lang="">©2016<span> </span><a href="http://www.cyberpathwaysacrossmd.com/index.html" id="_i_0" lang="" target="_blank">Cyber Pathways Across Maryland</a>.</p>
-<p id="N106E2" lang="">Unless otherwise specified, CPAM materials are licensed under a<span> </span><a href="http://creativecommons.org/licenses/by/4.0/" id="_i_1" lang="" target="_blank">Creative</a><a href="http://creativecommons.org/licenses/by/4.0/" id="_i_2" lang="" target="_blank">Commons Attribution 4.0 International License</a>.</p>
-<p id="N106EE" lang="">This workforce solution was funded by a grant awarded by the U.S. Department of Labor’s Employment and Training Administration. The solution was created by the grantee and does not necessarily reflect the official position of the U.S. Department of Labor. The Department of Labor makes no guarantees, warrantees, or assurances of any kind, express or implied, with respect to such information, including any information on linked sites and including, but not limited to, accuracy of the information or its completeness, timeliness, usefulness, adequacy, continued availability, or ownership.</p>
-<p id="N10670" lang="">The kinds of skills Joe and Alex are developing are part of<span> </span><span class="term" lang="">metacognition</span>. They are each working on the skill of planning strategies for learning particular topics.</p>
-<div class="definition">
-<dl>
-<dt>Metacognition</dt>
-<dd><span class="def-lbl">(definition)</span>
-<div class="meaning">Metacognition, or “thinking about thinking,” is your awareness of yourself as a learner and your ability to regulate your own learning. It involves five distinct skills:
-<ol class="decimal" lang="">
-<li lang="">Assessing the task.</li>
-<li lang="">Evaluating your strengths and weaknesses.</li>
-<li lang="">Planning an approach.</li>
-<li lang="">Applying strategies and monitoring your performance.</li>
-<li lang="">Reflecting and adjusting if needed.</li>
-</ol>
-</div>
-</dd>
-</dl>
-</div>
-<p id="N10698" lang="">The diagram below shows you one example of the metacognitive cycle. Hover over the individual skills to learn more.</p>
-<p lang=""><iframe data-mce-fragment="1" frameborder="0" height="480" id="_i_0" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/_u01_m01_learning_strategies/webcontent/oli-metacognitive.html" title="The Metacognitive Cycle" width="640"></iframe><span></span></p>
-<div class="examplewrap">
-<div class="exHead"><span class="scnReader">EXAMPLE</span></div>
-<div class="example clearfix">
-<h5 lang="">Metacognition in Action</h5>
-<div>
-<p id="N106A9" lang="">You get an assignment and ask yourself:</p>
-<p id="N106AC" lang="">“What exactly does this assignment involve and what have I learned in this course that is relevant to it?”</p>
-<p id="N106AF" lang="">You are exercising metacognitive skills #1 and #2 by assessing the task and evaluating your strengths and weaknesses in relation to it. If you think about what steps you need to take to complete the assignment and determine when it is reasonable to begin, you are exercising skill #3 by planning. If you start in on your plan and realize that you are working more slowly than you anticipated, you are putting skill #4 to work by applying a strategy and monitoring your performance. Finally, if you reflect on your performance in relation to your time frame for the task, and discover an equally effective but more efficient way to work, you are engaged in skill #5 of reflecting and adjusting your approach as needed.</p>
-<p id="N10678" lang="">Metacognition is not rocket science. In some respects, it is fairly ordinary and intuitive. Yet you’d be surprised how often people lack strong metacognitive skills, and you’d be amazed by how much weak metacognitive skills can undermine performance. To test your own powers of metacognition, read each of the scenarios below and identify which metacognitive skill the student is struggling with.</p>
-<div actguid="d87f2ce10a0001dc35f6434034ce8248" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2ce10a0001dc35f6434034ce8248&amp;userGUID=40923138%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
-<div class="activitywrap purpose learnbydoing flash" id="d_u01_m01_metacog_DIGT_4_inline">
-<div class="activityhead">
-<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing</span></div>
-<div class="activityinfo"></div>
-</div>
-<div class="actContain">
-<div class="activity flash">
-<div class="flash_obj asx testFlash" id="_u01_m01_metacog_DIGT_4_inline">
-<div class="page 482884" id="o_u01_m01_metacog_DIGT_4_inline">
-<div class="question ddfb" id="482884">
-<div>Rudolfo anticipates a very busy semester, so he reads all of the exposition and completes all of the learning activities by the second week of the semester. While this frees up his time for other courses, he finds that when he goes to take the last Quiz, he has forgotten a lot of what he learned. Rudolfo failed to<span> </span><span class="ans"> <span class="component"><select>
-<option id="ans_EMPTY_CHOICE" value="">--</option>
-<option value="A">properly assess the task.</option>
-</select><span> </span><select>
-<option id="ans_opt_0" value="A"></option>
-<option id="ans_opt_1" value="B">accurately evaluate his own strengths and weaknesses.</option>
-<option value="C">plan an effective strategy for working through the</option>
-</select><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><select id="ans">
-<option id="ans_opt_2" value="C">course.</option>
-<option id="ans_opt_3" value="D">successfully monitor his own performance.</option>
-<option id="ans_opt_4" value="E">adjust his approach.</option>
-</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/_u01_m01_learning_strategies/x-oli-workbook_page/javascript();" rel="556825" title="Click for hint"></a></span></div>
-</div>
-</div>
-</div>
-</div>
-<div class="pageControls clearfix" id="pagecontrols-d87f2ce10a0001dc35f6434034ce8248"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2ce10a0001dc35f6434034ce8248" id="reset-d87f2ce10a0001dc35f6434034ce8248"></a>Reset this Activity<a alt="Click to navigate to page 1" class="btnPage NOT_STARTED current" page="1">Page 1<span></span></a><a alt="Click to navigate to page 2" class="btnPage NOT_STARTED" page="2">Page 2<span></span></a><a alt="Click to navigate to page 3" class="btnPage NOT_STARTED" page="3">Page 3<span></span></a><input class="btnNext" type="button" value="Next »"/></div>
-</div>
-</div>
-</div>
-<p id="N1069A" lang="">Strong metacognitive skills are essential for independent learning, so use the experience of monitoring your own learning for PC Hardware as an opportunity to hone these skills for other classes and tasks.</p>
-<div id="references">
-<h3>References</h3>
-<ol>
-<li id="Ambrose">Ambrose, S. A., Bridges, M. W., DiPietro, M., Lovett, M. C., and Norman, M. K. (2010).<span> </span><em>How Learning Works: 7 research-based principles for smart teaching.</em><span> </span>San Francisco: Jossey-Bass.</li>
-<li id="Chi">Chi, M. T. H., Bassock, M., Lewis, M. W., Reimann, P., and Glaser, R. (1989). "Self-explanations: How students study and use examples in learning to solve problems." Cognitive Science. Volume 13. 145-182 Pages.</li>
-<li id="Dunning">Dunning, D. (2007).<span> </span><em>Self-insight: Roadblocks and detours on the path to knowing thyself.</em><span> </span>New York: Taylor and Francis.</li>
-<li id="Hayes">Hayes, J. R., and Flower, L. S. (1986). "Writing research and the writer." American Psychologist Special Issue: Psychological Science and Education. Volume 41. 1106-1113 Pages.</li>
-<li id="Schoenfeld">Schoenfeld, A. H. (1987). "What’s all the fuss about metacognition?." In A. H. Schoenfeld (Ed.), Cognitive Science and Mathematics Education. 189-215 Pages. Hillsdale, NJ: Erlbaum.</li>
-</ol>
-<h2>u2</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923138 CP2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923138 CP2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='test.html'>test</a></li></li></ul></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w8.html'>w8</a><li><a href='W9.html'>W9</a></li></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='u1.html'>u1</a><ul class='dropdown'><li><a href='What You Need to Know About the Course.html'>What You Need to Know About the Course</a></li></ul><li class='has-children'><a href='About These Materials.html'>About These Materials</a><ul class='dropdown'><li><a href='References.html'>References</a></li></ul><li><a href='u2.html'>u2</a><li><a href='USB.html'>USB</a><li><a href='PS2.html'>PS2</a><li><a href='FireWire.html'>FireWire</a><li><a href='SCSI.html'>SCSI</a><li><a href='Serial Ports.html'>Serial Ports</a><li><a href='Parallel Ports.html'>Parallel Ports</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">References << <a href='References.html'>Previous</a> <a href='USB.html'>Next</a> >> USB<br /><h1>u2</h1>
 <ol>
 <li>
 <div class="multi" id="lobjh">
@@ -727,115 +727,54 @@
 </table>
 <div class="section" id="N10688">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">USB</span></h2>
-<p id="N1068F" lang="">The<span> </span><span class="term" lang="">universal serial bus (USB)<span> </span></span>has replaced many of the external input and output ports on modern computers. In fact, USB can connect virtually any device to a computer, in modern devices.</p>
-<div class="imagewrap"><span class="image"><img alt="USB logo that depicts a central      hub with three branching lines protruding from it to the right. The top      line terminates with a circle. The middle line terminates with an arrow      and the bottom line terminates with a square." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image32.png" title="USB logo that depicts a central      hub with three branching lines protruding from it to the right. The top      line terminates with a circle. The middle line terminates with an arrow      and the bottom line terminates with a square."/></span><span class="caption" lang="">USB logo. Photo used under CC-BY-NC license from<span> </span><a href="https://flic.kr/p/4CN16R" id="_i_1" lang="" target="_blank">albjimenez</a>.</span></div>
-<p id="N106A3" lang="">Things such as mice and keyboards, which used to use PS/2 or serial ports, now use USB. Things like printers and scanners, which once used parallel or SCSI ports, now use USB as well. Small computer system interface (SCSI) is a set of parallel interface standards developed by the American National Standards Institute (ANSI) for attaching printers, disk drives, scanners and other peripherals to computers. SCSI (pronounced "skuzzy") is supported by all major operating systems. USB began with version 1.1, which provided two speeds of operations: low-speed (1.5 Mbps for input devices such as mice/keyboards) and full-speed (12 Mbps for other devices, such as webcams, digital cameras, scanners, and printers). USB 2.0 further increased speed to what is known as high-speed or hi-speed (480 Mbps), allowing for USB to provide faster access to external storage devices such as hard drives, helping to replace SCSI and FireWire ports. USB 3.0, the current version, is known as superspeed, because it provides up to 5 Gbps of bandwidth for very fast access to external devices and can be identified by the blue color. Newer versions of USB are backward compatible with older versions, but you should not connect different versions of USB on the same port, as this slows the port down to the lowest version. For example, if you plug in a four-port USB hub to a USB 3.0 port, but then connect a USB 1.1 mouse to the hub, the entire four-port hub will now run at a maximum speed of 12 Mbps (USB 1.1 speeds). Each USB port can be daisy-chained to provide up to 127 devices per port, using USB hubs.</p>
-<p id="N106A6" lang="">USB cables should be kept under three meters (approximately nine feet) in length for USB 1.1 and 3.0. For the USB 2.0 variant, you can use cables up to five meters (approximately 15 feet) without issues. If you use cables longer than the recommended length, you may get errors in your input/output over USB, so it is best to keep the USB cables short. If you need a longer cable run, you must use a hub as a repeater to help boost the power signal over the USB cable. There are two types of hubs: self-powered and bus-powered. Self-powered hubs have their own power adapter and connect to the wall outlet to provide power to the hub. Bus-powered are instead powered solely from the source USB port that they are connected to on the computer. This provides minimal amperage for the devices connected to the USB hub that can cause issues when connecting multiple hubs to each other. For connection of multiple hubs, it is best practice to use self-powered hubs. Each USB port can support up to 127 different devices in the chain, with the root hub for the computer having two ports directly connected to the motherboard. If you need more USB ports, you can do this by adding hubs (self-powered or bus-powered), using motherboard USB header cables, or adding expansion cards that contain more USB ports.</p>
-<div class="imagewrap"><span class="image"><img alt="Photo depicting a USB      self-powered hub with two peripheral devices connected with USB      cables." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image33.png" title="Photo depicting a USB      self-powered hub with two peripheral devices connected with USB      cables."/></span><span class="caption" lang="">Caption: USB hub. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/ebCPDS" id="_i_3" lang="" target="_blank">Clive Darra</a>.</span></div>
-</div>
-</div>
-<div class="section" id="N106B9">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">PS2</span></h2>
-<p id="N106C0" lang="">PS/2 ports, also known as mini-DIN ports, were commonly used for keyboards and mice until the past decade. Recently, these ports have been replaced by USB in most machines. These ports, though, are color-coded for the device which they are intended to be used with. The keyboard port is colored purple, and the mouse port is colored green. Even though these ports look identical, they are not interchangeable. If you plug a mouse into the keyboard port, it simply won’t work. Additionally, unlike USB, these ports are not hot-swappable. Instead, you must restart the machine after plugging the device in for the computer to recognize the new mouse or keyboard.</p>
-<p id="N106C3" lang=""></p>
-<div class="imagewrap"><span class="image"><img alt="Photo depicting two PS/2 ports.      One port is periwinkle blue. The other port is teal green." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image34.jpeg" title="Photo depicting two PS/2 ports.      One port is periwinkle blue. The other port is teal green."/></span><span class="caption" lang="">PS/2 ports. Photo used under CC-BY-NC-SA license from<span> </span><a href="https://www.flickr.com/photos/14491537@N06/" id="_i_5" lang="" target="_blank">Rodrigo</a><a href="https://www.flickr.com/photos/14491537@N06/" id="_i_6" lang="" target="_blank">Justi</a></span></div>
-<p></p>
-<div actguid="d87f2d110a0001dc54b26764f1b37aa9" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d110a0001dc54b26764f1b37aa9&amp;userGUID=40923138%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
-<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd09">
-<div class="activityhead">
-<div class="section" id="N10680">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">FireWire</span></h2>
-<p id="N10687" lang="">FireWire was originally developed and made popular by Apple as a challenger to USB and a replacement for SCSI. FireWire is a high-speed, bidirectional, serial transmission port used to connect PCs to each other, or devices to PCs. It was introduced during the days of USB 1.1 as a faster alternative, since USB 1.1 had a maximum speed of 12 Mbps and FireWire has a maximum speed of 400 Mbps under IEEE 1394a (FireWire 400) and 800 Mbps under IEEE 1394b (Firewire 800). Common uses for FireWire were to connect to external storage devices and digital media devices, such as video cameras. Most FireWire devices have two FireWire ports to allow for daisy-chaining of the devices, which supports up to 16 devices per FireWire port without any degradation. FireWire remains popular with Mac OS X, but has lost much of its popularity with the introduction of USB 3.0, since the speed is much quicker with USB 3.0.</p>
-<div class="imagewrap"><span class="image"><img alt="Photograph depicting a FireWire      card with three ports." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image36.png" title="Photograph depicting a FireWire      card with three ports."/></span><span class="caption" lang="">FireWire card. FireWire card photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/dQvkRi" id="_i_1" lang="" target="_blank">Emilian</a><a href="https://flic.kr/p/dQvkRi" id="_i_2" lang="" target="_blank">Robert Vicol</a>.</span></div>
-</div>
-</div>
-<div class="section" id="N1069C">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">SCSI</span></h2>
-<p id="N106A3" lang="">SCSI stands for small computer systems interface, and is a legacy type of connector. It is used to connect hard disk drives, tape drives, ZIP drives, JAZ drives, scanners, optical drives (CD/DVD), and printers to a computer both internally and externally. SCSI is found mainly in servers for hard disk drives and tape drives, but was sometimes found in older workstations in the 1990s. SCSI supports daisy-chaining and was the precursor to FireWire. SCSI can be narrow (supporting up to seven devices on a single port) or wide (supporting up to 15 devices on a single port). SCSI also requires that a unique ID be assigned to each device in the chain, so the computer knows which device is which. This is accomplished using either a<span> </span><a aria-describedby="N106A7" class="extra" id=""></a>DIP switchor jumper that assigns a unique ID of 0-15 (for wide), or 0-7 (for narrow). Finally, each chain must have a termination plug to signify the end of the SCSI chain. SCSI chains can contain many devices of mixed speeds, but this causes the whole “chain” to default to the slowest device. Speed for SCSI ranges from 10 Mbps to 320 Mbps. Since the advent of FireWire, SCSI has lost popularity as an external port for storage devices. Internally, SCSI has been replaced by the SATA[KK1] connector, which we will discuss in the section on storage later in the course.</p>
-<div class="imagewrap"><span class="image"><img alt="Photo depicting the back of a      computer with a power port, power switch and two SCSI ports, which are      blue." class="popimg" id="_i_3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image37.png" title="Photo depicting the back of a      computer with a power port, power switch and two SCSI ports, which are      blue."/></span><span class="caption" lang="">Two blue SCSI ports. SCSI Ports photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/7rzVde" id="_i_4" lang="" target="_blank">Gerben</a><a href="https://flic.kr/p/7rzVde" id="_i_5" lang="" target="_blank">Wierda</a>.</span></div>
-<div actguid="d87f2d160a0001dc7a835020cd458ed1" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d160a0001dc7a835020cd458ed1&amp;userGUID=40923138%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
-<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd11">
-<div class="activityhead">
-<div class="section" id="N10688">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Serial Ports</span></h2>
-<p id="N1068F" lang="">Serial ports, also known as COM or RS-232 ports, were used heavily in the 1980s and 1990s for serial communication as input/output ports. They were often used for external modems, mice, trackballs, touchpads, plotters, label printers, dot-matrix printers, PDA (Palm Pilot) docking stations, digital cameras, and PC-to-PC connections. USB has replaced serial ports for all of these uses in modern computers, but some people still have a need for a serial port. If your computer doesn’t have a serial port (which is very common in modern machines), you can add one using an expansion card or a USB to serial adapter. Serial ports come in two varieties: DB-25 (containing 25 pins) and DB-9 (containing nine pins). The DB-9 variety is the most common in use. Serial ports are generally slow, since they send data one bit at a time over the wire. There is no standard serial cable pinout; instead, they are created for the application they are used for, such as a null-modem cable to connect two computers directly, or a modem cable to connect the computer to an external modem. The most common variety of serial cable in use today is the CISCO rollover cable, which has a nine-pin serial port on one end and an RJ-45 connector (like a network cable) on the other end. This cable is used to connect a computer to a CISCO router or switch for configuration tasks.</p>
-<div class="imagewrap"><span class="image"><img alt="Photograph of the connector on a      serial cable. The connector is slightly oval and has nine male pins (one      row of five pins and one row of four pins)." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image38.png" title="Photograph of the connector on a      serial cable. The connector is slightly oval and has nine male pins (one      row of five pins and one row of four pins)."/></span><span class="caption" lang="">Serial cable connector. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/bCVXoJ" id="_i_1" lang="" target="_blank">Brad</a><a href="https://flic.kr/p/bCVXoJ" id="_i_2" lang="" target="_blank">Wilmot</a>.</span></div>
-<div class="imagewrap"><span class="image"><img alt="Photograph of a serial port. The      port is slightly oval and has female receptacles for nine male pins (one      row of five pins and one row of four pins). Each receptacle is numbered      using numerals 1through 9." class="popimg" id="_i_3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image39.png" title="Photograph of a serial port. The      port is slightly oval and has female receptacles for nine male pins (one      row of five pins and one row of four pins). Each receptacle is numbered      using numerals 1through 9."/></span><span class="caption" lang="">Serial port. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/5h619P" id="_i_4" lang="" target="_blank">yum</a><a href="https://flic.kr/p/5h619P" id="_i_5" lang="" target="_blank">9 me</a>.</span></div>
-</div>
-</div>
-<div class="section" id="N106B4">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Parallel Ports</span></h2>
-<p id="N106BB" lang="">Parallel ports, also known as LPT (line printer terminal) ports, were used heavily in the 1980s and 1990s for parallel communication as input/output ports. They were often used for printers and scanners. USB has replaced parallel ports for all of these uses in modern computers, and few people will still have a need for a parallel port in contemporary computing. If your computer doesn’t have a parallel port (which is very common in modern machines), you could add one using an expansion card or a USB to parallel adapter. Parallel ports come in a standard DB-25 (containing 25 pins) cable. Other varieties of cables exist, including a DB-25 to Centronics 36-pin cable (common with printers), DB-25 to DB-25 cable (common with switchboxes), and DB-25 to DB-25 with the transmit/receive pins reversed (common for computer to computer connections for data transfer). Parallel ports are generally faster than serial ports, since they send data in parallel with eight bits at a time going over the wire. Parallel ports can be configured as output only or bidirectional ports. The ports are also configured as EPP (enhanced parallel port), ECP (enhanced capabilities port), and EPP/ECP. Under EPP, the port uses interrupt request (IRQ) and I/O addresses for fastest speeds. In ECP, the port can support daisy-chaining of devices and uses IRQ, I/O address, and DMA channels, and is considered resource hungry. EPP/ECP combines both modes into a single configuration, allowing for maximum compatibility. Parallel ports transmit data at up to two Mbps and receive data at 500 Kbps, which is very slow by today’s standards.</p>
-<div class="imagewrap"><span class="image"><img alt="Photograph of a parallel port on      the back of a computer. The port is slightly oval and has female      receptacles. Two additional serial ports are also      depicted." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image40.png" title="Photograph of a parallel port on      the back of a computer. The port is slightly oval and has female      receptacles. Two additional serial ports are also      depicted."/></span><span class="caption" lang="">Parallel port. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/dkztR" id="_i_7" lang="" target="_blank">Ryan</a><a href="https://flic.kr/p/dkztR" id="_i_8" lang="" target="_blank">Franklin</a>.</span></div>
-<div class="imagewrap"><span class="image"><img alt="Photograph of a the connector on      a parallel cable. It is slightly oval and has numerous male      pins." class="popimg" id="_i_9" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image41.png" title="Photograph of a the connector on      a parallel cable. It is slightly oval and has numerous male      pins."/>            </span><span class="caption" lang="">Parallel cable. Photo used under CC-BY-ND license from<span> </span><a href="https://flic.kr/p/cgeek" id="_i_10" lang="" target="_blank">Don</a><a href="https://flic.kr/p/cgeek" id="_i_11" lang="" target="_blank">Lockton</a></span></div>
-<div class="imagewrap"><span>This lesson covers the basic procedures and safety precautions with which technicians must be competent and comfortable before working on various PC hardware. First we will discuss the hazards of computer systems and tools, including electricity, electrostatic discharge (ESD), chemicals, and other dangers that can hurt you when you are working on the various forms of computer hardware. We will also cover the safety measures and procedures that you must employ to minimize risk, such as using ESD straps, ESD mats, self-grounding systems, and equipment grounding. We will then discuss personal safety, including removal of jewelry to protect yourself and computers, proper lifting techniques and weight limitations, and removal of electrical power. Finally, we will cover electrical fire safety, cathode ray tube (CRT) safety and disposal, cable management, and local government regulation compliance.</span></div>
-<div class="imagewrap">
-<p id="N10680" lang="">Electricity is a significant hazard in working with computer systems and tools. Electricity is required to make workstations operate, but if you are not careful, electricity can cause serious injury to you and major damage to the computer you are working on.</p>
-<p id="N10683" lang="">With regard to human injury, technicians can receive an electrical shock from computers or electrical outlets if special care is not taken when working with them. It is important to check all the power outlets to ensure they are working properly. When checking the outlets, you should verify that the outlet is providing the correct amount of power. If you are working in the United States, then you should expect to receive a voltage of 115 VAC to 120 VAC (volts of alternating current) from the power outlets in an office or home. This can be verified using a simple three-prong tester, voltmeter, or multimeter. Procedurally, you must never pull the cords out by the wires, as this can cause damage and fraying of the cables. Instead, you should plug in and remove cables by the plug on the end of the cord. It is important that you never use a frayed or damaged power cable.</p>
-<p id="N10686" lang="">In addition to keeping themselves safe, technicians need to keep computers safe from electrical damage. It is common to use a surge protector to protect computers from power spikes or surges. A power strip is not the same thing as a surge protector. Surge protectors are rated in joules (J), a unit of energy. The rating indicates the number of joules the surge protector can absorb before failure. A higher rating indicates greater protection for the computer. Also, you must not overload the surge protectors, and must never daisy-chain them, or plug one surge protector into another: this causes higher amperage draws that can lead to fires.</p>
-<div class="imagewrap"><span class="image"><img alt="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image1.jpeg" title="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it."/></span><span class="caption" lang="">Overloaded electrical outlet. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/7r9VUz" id="_i_1" lang="" target="_blank">Gordon Wrigley</a>.</span></div>
-<p id="N10696" lang="">If continuous power to a workstation is necessary, you can use an uninterruptible power supply (UPS). A UPS should never be used for laser printers, as it draws too much power through the UPS and can cause damage to the printer.</p>
-<div class="opacity">
-<div class="content shadowTwo" role="main">
-<div class="contentContain">
-<p id="N106B8" lang="">When working with a computer, the largest amount of voltage you will find is located inside the computer’s power supply unit (PSU). You should<span> </span><em class="bold" lang="">never<span> </span></em>disassemble a PSU; when it is broken, simply replace the entire unit. Power supply units are relatively inexpensive, so it is a best practice to simply replace them. Some technicians wonder why they should not disassemble or open the PSU and try to fix it, but the reason is simple — it is<span> </span><em class="bold" lang="">very<span> </span></em>dangerous. A PSU has numerous electrical components that allow it to convert the high-voltage 115-120 VAC (or 230-240 VAC) power into the 12 VDC (volts direct current) that is usable by the computer. Some of these components are capacitors, which cause the power supply to retain lots of voltage (up to 10,000 volts or more) even after the computer is turned off and even after the computer and PSU are unplugged. Therefore, if you want to see the inside of a PSU, search for it on the Internet and look at a picture. It is much safer.</p>
-<div class="imagewrap"><span class="image"><img alt="Photograph of a computer PSU with two cords    plugged in and two cords laying by the side." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image2.png" title="Photograph of a computer PSU with two cords    plugged in and two cords laying by the side."/></span><span class="caption" lang="">Computer PSU. Photo used under CC-BY-NC license</span></div>
-<div class="imagewrap">from<span> </span><a href="https://flic.kr/p/gjbU" id="_i_3" lang="" target="_blank">cand3la</a>.</div>
-</div>
-</div>
-</div>
-<div class="paginationBt">
-<div class="pagtopwrapwrap2">
-<div class="pagtopwrap2">
-<div aria-label="page" class="pagtop2" role="navigation"><a accesskey="Ctrl+Arrow Left" aria-label="previous" class="prev oneclick degree1" href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=d87f2d1f0a0001dc3f77c5e678969f33" role="navigation" title="Introduction"></a><span> </span></div>
-</div>
-</div>
-</div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<br />References << <a href='References.html'>Previous</a> <a href='USB.html'>Next</a> >> USB</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
