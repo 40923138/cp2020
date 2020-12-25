@@ -1,0 +1,207 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923138 CP2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923138 CP2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='test.html'>test</a></li></li></ul></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w8.html'>w8</a></li></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='U1.html'>U1</a><ul class='dropdown'><li><a href='p.1-1.html'>p.1-1</a><li><a href='p.2-1.html'>p.2-1</a></li></ul><li class='has-children'><a href='U2.html'>U2</a><ul class='dropdown'><li><a href='p.1-2.html'>p.1-2</a><li><a href='p.2-2.html'>p.2-2</a><li><a href='p.3.html'>p.3</a><li><a href='p.4.html'>p.4</a><li><a href='p.5.html'>p.5</a><li><a href='p.6.html'>p.6</a><li><a href='p.7.html'>p.7</a><li><a href='p.8.html'>p.8</a><li><a href='p.9.html'>p.9</a><li><a href='p.10.html'>p.10</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">p.7 << <a href='p.7.html'>Previous</a> <a href='p.9.html'>Next</a> >> p.9<br /><h1>p.8</h1>
+<p>USB</p>
+<div class="section" id="N10688">
+<div class="sectionContain">
+<p id="N1068F" lang="">The<span> </span><span class="term" lang="">universal serial bus (USB)<span> </span></span>has replaced many of the external input and output ports on modern computers. In fact, USB can connect virtually any device to a computer, in modern devices.</p>
+<div class="imagewrap"><span class="image"><img alt="USB logo that depicts a central      hub with three branching lines protruding from it to the right. The top      line terminates with a circle. The middle line terminates with an arrow      and the bottom line terminates with a square." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image32.png" title="USB logo that depicts a central      hub with three branching lines protruding from it to the right. The top      line terminates with a circle. The middle line terminates with an arrow      and the bottom line terminates with a square."/></span><span class="caption" lang="">USB logo. Photo used under CC-BY-NC license from<span> </span><a href="https://flic.kr/p/4CN16R" id="_i_1" lang="" target="_blank">albjimenez</a>.</span></div>
+<p id="N106A3" lang="">Things such as mice and keyboards, which used to use PS/2 or serial ports, now use USB. Things like printers and scanners, which once used parallel or SCSI ports, now use USB as well. Small computer system interface (SCSI) is a set of parallel interface standards developed by the American National Standards Institute (ANSI) for attaching printers, disk drives, scanners and other peripherals to computers. SCSI (pronounced "skuzzy") is supported by all major operating systems. USB began with version 1.1, which provided two speeds of operations: low-speed (1.5 Mbps for input devices such as mice/keyboards) and full-speed (12 Mbps for other devices, such as webcams, digital cameras, scanners, and printers). USB 2.0 further increased speed to what is known as high-speed or hi-speed (480 Mbps), allowing for USB to provide faster access to external storage devices such as hard drives, helping to replace SCSI and FireWire ports. USB 3.0, the current version, is known as superspeed, because it provides up to 5 Gbps of bandwidth for very fast access to external devices and can be identified by the blue color. Newer versions of USB are backward compatible with older versions, but you should not connect different versions of USB on the same port, as this slows the port down to the lowest version. For example, if you plug in a four-port USB hub to a USB 3.0 port, but then connect a USB 1.1 mouse to the hub, the entire four-port hub will now run at a maximum speed of 12 Mbps (USB 1.1 speeds). Each USB port can be daisy-chained to provide up to 127 devices per port, using USB hubs.</p>
+<p id="N106A6" lang="">USB cables should be kept under three meters (approximately nine feet) in length for USB 1.1 and 3.0. For the USB 2.0 variant, you can use cables up to five meters (approximately 15 feet) without issues. If you use cables longer than the recommended length, you may get errors in your input/output over USB, so it is best to keep the USB cables short. If you need a longer cable run, you must use a hub as a repeater to help boost the power signal over the USB cable. There are two types of hubs: self-powered and bus-powered. Self-powered hubs have their own power adapter and connect to the wall outlet to provide power to the hub. Bus-powered are instead powered solely from the source USB port that they are connected to on the computer. This provides minimal amperage for the devices connected to the USB hub that can cause issues when connecting multiple hubs to each other. For connection of multiple hubs, it is best practice to use self-powered hubs. Each USB port can support up to 127 different devices in the chain, with the root hub for the computer having two ports directly connected to the motherboard. If you need more USB ports, you can do this by adding hubs (self-powered or bus-powered), using motherboard USB header cables, or adding expansion cards that contain more USB ports.</p>
+<div class="imagewrap"><span class="image"><img alt="Photo depicting a USB      self-powered hub with two peripheral devices connected with USB      cables." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image33.png" title="Photo depicting a USB      self-powered hub with two peripheral devices connected with USB      cables."/></span><span class="caption" lang="">Caption: USB hub. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/ebCPDS" id="_i_3" lang="" target="_blank">Clive Darra</a>.</span></div>
+</div>
+</div>
+<div class="section" id="N106B9">
+<div class="sectionContain">
+<p id="N106C0" lang="">PS/2 ports, also known as mini-DIN ports, were commonly used for keyboards and mice until the past decade. Recently, these ports have been replaced by USB in most machines. These ports, though, are color-coded for the device which they are intended to be used with. The keyboard port is colored purple, and the mouse port is colored green. Even though these ports look identical, they are not interchangeable. If you plug a mouse into the keyboard port, it simply won’t work. Additionally, unlike USB, these ports are not hot-swappable. Instead, you must restart the machine after plugging the device in for the computer to recognize the new mouse or keyboard.</p>
+<p id="N106C3" lang=""></p>
+<div class="imagewrap"><span class="image"><img alt="Photo depicting two PS/2 ports.      One port is periwinkle blue. The other port is teal green." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image34.jpeg" title="Photo depicting two PS/2 ports.      One port is periwinkle blue. The other port is teal green."/></span><span class="caption" lang="">PS/2 ports. Photo used under CC-BY-NC-SA license from<span> </span><a href="https://www.flickr.com/photos/14491537@N06/" id="_i_5" lang="" target="_blank">Rodrigo</a><a href="https://www.flickr.com/photos/14491537@N06/" id="_i_6" lang="" target="_blank">Justi</a></span></div>
+<p>通用串行總線（USB）取代了現代計算機上的許多外部輸入和輸出端口。實際上，在現代設備中，USB幾乎可以將任何設備連接到計算機。</p>
+<p>USB徽標描繪了一個中央集線器，該集線器從右側伸出了三個分支線。最上面的線以一個圓終止。中線以箭頭終止，底線以正方形終止。<br/>USB徽標。照片由albjimenez根據CC-BY-NC許可使用。<br/>鼠標和鍵盤等以前使用PS / 2或串行端口的設備現在使用USB。曾經使用並行或SCSI端口的打印機和掃描儀之類的東西現在也使用USB。小型計算機系統接口（SCSI）是由美國國家標準協會（ANSI）開發的一組並行接口標準，用於將打印機，磁盤驅動器，掃描儀和其他外圍設備連接到計算機。所有主要操作系統都支持SCSI（讀作“ skuzzy”）。 USB從版本1.1開始，提供兩種運行速度：低速（對於鼠標/鍵盤等輸入設備為1.5 Mbps）和全速（對於網絡攝像頭，數碼相機，掃描儀和打印機等其他設備為12 Mbps） ）。 USB 2.0將速度進一步提高到所謂的高速或高速（480 Mbps），從而使USB可以更快地訪問外部存儲設備（例如硬盤驅動器），從而幫助替換SCSI和FireWire端口。當前版本的USB 3.0被稱為超速，因為它提供高達5 Gbps的帶寬，可以非常快速地訪問外部設備，並且可以通過藍色識別。較新版本的USB向後兼容較舊版本的USB，但是您不應在同一端口上連接不同版本的USB，因為這會將端口速度降低到最低版本。例如，如果將四端口USB集線器插入USB 3.0端口，然後將USB 1.1鼠標連接到集線器，則整個四端口集線器現在將以12 Mbps的最大速度運行（USB 1.1速度）。每個USB端口都可以使用USB集線器進行菊花鏈連接，以每個端口提供多達127個設備。</p>
+<p>對於USB 1.1和3.0，USB電纜的長度應保持在三米（約9英尺）以下。對於USB 2.0版本，您可以使用最長5米（約15英尺）的電纜而不會出現問題。如果使用的電纜長度超過建議的長度，則通過USB進行的輸入/輸出可能會出現錯誤，因此最好使USB電纜的長度短。如果需要更長的電纜線，則必須使用集線器作為中繼器，以幫助增強USB電纜上的電源信號。集線器有兩種類型：自供電和總線供電。自供電的集線器具有自己的電源適配器，並連接至壁裝電源插座，以為集線器供電。總線供電僅由它們在計算機上連接的源USB端口供電。這為連接到USB集線器的設備提供了最小的電流強度，當將多個集線器相互連接時會引起問題。對於連接多個集線器，最佳做法是使用自供電集線器。每個USB端口可在鏈中最多支持127個不同的設備，計算機的根集線器具有直接連接到主板的兩個端口。如果需要更多USB端口，可以通過添加集線器（自供電或總線供電），使用主板USB接頭連接器電纜或添加包含更多USB端口的擴展卡來實現。</p>
+<p>該圖描繪了一個USB自供電集線器，其中兩個外圍設備通過USB電纜連接。<br/>標題：USB集線器。照片由Clive Darra根據CC-BY-SA許可使用。<br/>PS / 2<br/>PS / 2端口，也稱為mini-DIN端口，在過去十年中一直廣泛用於鍵盤和鼠標。最近，在大多數機器中，這些端口已被USB取代。但是，這些端口已針對要使用的設備進行了顏色編碼。鍵盤端口為紫色，鼠標端口為綠色。即使這些端口看起來相同，也不能互換。如果將鼠標插入鍵盤端口，則根本無法使用。此外，與USB不同，這些端口不可熱插拔。而是必須在插入設備後重新啟動機器，計算機才能識別新的鼠標或鍵盤。</p>
+<p>描述兩個PS / 2端口的照片。一個端口是長春花藍色。另一個端口是藍綠色。<br/>PS / 2端口。 RodrigoJusti根據CC-BY-NC-SA許可使用的照片</p>
+<br />p.7 << <a href='p.7.html'>Previous</a> <a href='p.9.html'>Next</a> >> p.9</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

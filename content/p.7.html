@@ -1,0 +1,333 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923138 CP2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923138 CP2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='test.html'>test</a></li></li></ul></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w8.html'>w8</a></li></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='U1.html'>U1</a><ul class='dropdown'><li><a href='p.1-1.html'>p.1-1</a><li><a href='p.2-1.html'>p.2-1</a></li></ul><li class='has-children'><a href='U2.html'>U2</a><ul class='dropdown'><li><a href='p.1-2.html'>p.1-2</a><li><a href='p.2-2.html'>p.2-2</a><li><a href='p.3.html'>p.3</a><li><a href='p.4.html'>p.4</a><li><a href='p.5.html'>p.5</a><li><a href='p.6.html'>p.6</a><li><a href='p.7.html'>p.7</a><li><a href='p.8.html'>p.8</a><li><a href='p.9.html'>p.9</a><li><a href='p.10.html'>p.10</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">p.6 << <a href='p.6.html'>Previous</a> <a href='p.8.html'>Next</a> >> p.8<br /><h1>p.7</h1>
+<p id="N10688" lang="">The peripherals connect to the computer via standard ports. Ports allow for information to flow into or out of the computer as part of the input and output subsystems. External devices, such as keyboards, mice, printers, scanners, storage devices, monitors, and others can connect to the computer through various types of cables, which connect to specific ports. On most modern systems, this has been reduced down to a common, standard interface, the universal serial bus port (USB port). Older systems have various ports for various functions, which are now referred to as legacy ports, such as PS/2, serial, and parallel ports. They were difficult to configure and required hardware resources to be dedicated to them, such as interrupt requests, direct memory access, and specific I/O (input/output) port addresses. In USB, this is all handled by the operating system automatically. This makes hardware conflicts rare in current systems. Many customers will still have computers with legacy ports. So, it is important to understand multiple ports and connections.</p>
+<p id="N1068B" lang="">The photo below offers a close-up view of a motherboard’s port cluster.</p>
+<p id="N1068E" lang=""></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image20.png"/></span><span class="caption" lang="">Port cluster photo used under CC-BY license from<span> </span><a href="https://www.flickr.com/photos/11137865@N06/3858297109" id="_i_1" lang="" target="_blank">Edmund Tse</a>. Firewire port photo used under CC-BY-SA license from<span> </span><a href="https://en.wikipedia.org/wiki/IEEE_1394#/media/File:IEEE_1394_Firewire_PCI_Expansion_Card_Digon3.jpg" id="_i_2" lang="" target="_blank">Wikimedia Commons</a>.</span></div>
+<p></p>
+<p id="N106A3" lang="">The chart below describes the functions of the ports depicted in the image above.</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang="">PORT</td>
+<td lang="">NAME</td>
+<td lang="">FUNCTION</td>
+</tr>
+<tr>
+<td lang="">A</td>
+<td lang="">PS/2</td>
+<td lang="">Used to connect keyboards and mice.</td>
+</tr>
+<tr class="e">
+<td lang="">B</td>
+<td lang="">USB</td>
+<td lang="">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices.</td>
+</tr>
+<tr>
+<td lang="">C</td>
+<td lang="">S/PDIF Optical</td>
+<td lang="">Used to connect digital high-fidelity audio systems.</td>
+</tr>
+<tr class="e">
+<td lang="">D</td>
+<td lang="">HDMI</td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">high-definition multimedia interface<span> </span></em>(HDMI).</td>
+</tr>
+<tr>
+<td lang="">E</td>
+<td lang="">VGA</td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">video graphics array<span> </span></em>(VGA) display device.</td>
+</tr>
+<tr class="e">
+<td lang="">F</td>
+<td lang="">DVI</td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">digital video interface<span> </span></em>(DVI) display device.</td>
+</tr>
+<tr>
+<td lang="">G</td>
+<td lang="">USB</td>
+<td lang="">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices.</td>
+</tr>
+<tr class="e">
+<td lang="">H</td>
+<td lang="">IEEE 1394</td>
+<td lang="">Used to connect external FireWire devices, such as hard drives and cameras.</td>
+</tr>
+<tr>
+<td lang="">I</td>
+<td lang="">RJ-45</td>
+<td lang="">Used to connect to an Ethernet network.</td>
+</tr>
+<tr class="e">
+<td lang="">J</td>
+<td lang="">USB</td>
+<td lang="">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices.</td>
+</tr>
+<tr>
+<td lang="">K</td>
+<td lang="">Audio</td>
+<td lang="">Used to connect to a speaker system.</td>
+</tr>
+</tbody>
+</table>
+<p id="N10751" lang="">The photo below shows various types of connectors.</p>
+<p id="N10754" lang=""></p>
+<div class="imagewrap"><span class="image"><img alt="A photograph of 11 different types of connectors. Image A: A serial DB-9 cable. The connector has blue plastic pin receptacles in two rows. The top row has four pin receptacles and the bottom row has five pin receptacles. There is a white plastic housing on the connector with screws.    Image B: A DB-25 parallel cable. The metal connector has two rows of pins. There are twelve pins in the top row and thirteen pins in the bottom row. There is a white plastic housing on the connector with screws.    Image C: A DB-15 cable. The metal connector has two rows of pins, 8 in the first row, and 7 in the second row. There is a black plastic housing on the outside of the metal connector.    Image D: A VGA cable connector. It is a metal connector with three rows of pins with five pins in each row. There is a blue plastic housing on the connector with screws.    Image E: A DVI cable connector. It is a metal connector with two sets of pins. Each set has nine pins. There is also a small horizontal metal interface. There is a white plastic housing on the connector with screws.    Image F: A PS/2 cable. The PS/2 cable has a circular ending with six pin receptacles arrayed in a circle. There is a slightly larger rectangular receptacle in the center of the circle.    Image G: An RJ-11 (telephone modem) cable. It has a clear plastic connector with a tab. Colored smaller cables are visible on the inside.    Image H: An RJ-45 cable. It has a clear plastic connector. Colored smaller cables are visible on the inside with copper ends on each.    Image I: USB connector. A metal rectangular connector with a similarly shaped plastic insert that takes up a portion of the metal connection opening. A black plastic housing surrounds the metal connection.    Image J: An HDMI cable. It is a black plastic cable with a metal connector on the end.    Image K: A mini stereo cable. It is a black cable with a green plastic end with a round metal connector coming out of the end." class="popimg" id="_i_3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image21.png" title="A photograph of 11 different types of connectors. Image A: A serial DB-9 cable. The connector has blue plastic pin receptacles in two rows. The top row has four pin receptacles and the bottom row has five pin receptacles. There is a white plastic housing on the connector with screws.    Image B: A DB-25 parallel cable. The metal connector has two rows of pins. There are twelve pins in the top row and thirteen pins in the bottom row. There is a white plastic housing on the connector with screws.    Image C: A DB-15 cable. The metal connector has two rows of pins, 8 in the first row, and 7 in the second row. There is a black plastic housing on the outside of the metal connector.    Image D: A VGA cable connector. It is a metal connector with three rows of pins with five pins in each row. There is a blue plastic housing on the connector with screws.    Image E: A DVI cable connector. It is a metal connector with two sets of pins. Each set has nine pins. There is also a small horizontal metal interface. There is a white plastic housing on the connector with screws.    Image F: A PS/2 cable. The PS/2 cable has a circular ending with six pin receptacles arrayed in a circle. There is a slightly larger rectangular receptacle in the center of the circle.    Image G: An RJ-11 (telephone modem) cable. It has a clear plastic connector with a tab. Colored smaller cables are visible on the inside.    Image H: An RJ-45 cable. It has a clear plastic connector. Colored smaller cables are visible on the inside with copper ends on each.    Image I: USB connector. A metal rectangular connector with a similarly shaped plastic insert that takes up a portion of the metal connection opening. A black plastic housing surrounds the metal connection.    Image J: An HDMI cable. It is a black plastic cable with a metal connector on the end.    Image K: A mini stereo cable. It is a black cable with a green plastic end with a round metal connector coming out of the end."/></span>
+<p id="N1075C" lang=""><a aria-describedby="N1075F" class="extra" id=""></a>Image Credits<a href="https://www.flickr.com/photos/tychay/2235412540/in/photolist-4px5gw-ctsxG-oqSnyi-9CpV4j-oFjGjC-oHjFxm-fZG4pr-6vqXAW-77xzbd-4tWdQb-dJYGVV-7PUU9k-4BUxj2-929XkZ-7rzUNM-8Z7VsR-j37VEb-exdpBT-8UCwp2-dK4pWN-h3yBPq-c88rxj-5EJAc3-7ZiXE-5JC4WJ-5h63wa-5hanz5-6DzAiH-677BA7-3vjqp6-dVKw1v-dUmEaq-sJzC-5jn2Mp-4BYPny-4BYMW7-4CeACW-bR6y2-5xgUtt-yixLBp-4RTVeD-2SfQCH-5xkzoW-7mjgpd-6m3jr4-4niiMA-2Vx2cx-5ZAXoh-bwB6z-8fbpec" id="_i_4" lang="" target="_blank">Terry Chay</a>. DB-25 parallel cable photo (B) used under public domain from<span> </span><a href="http://www.clipartoday.com/freeclipart/computer/hardware/computercable_12917.html" id="_i_5" lang="" target="_blank">Clipart Today</a>. DB-15 cable photo (C) used under public domain from<span> </span><a href="https://commons.wikimedia.org/wiki/File:Midi_cable.jpg#/media/File:Midi_cable.jpg" id="_i_6" lang="" target="_blank">Wikipedia</a>. VGA cable photo (D) used under public domain image from<span> </span><a href="http://www.clipartoday.com/freeclipart/computer/hardware/computerconnector_12984.html" id="_i_7" lang="" target="_blank">Clipart Today</a>. DVI cable photo (E) used under public domain from<span> </span><a href="http://www.clipartoday.com/freeclipart/computer/hardware/computerconnector_12983.html" id="_i_8" lang="" target="_blank">Clipart Today</a>. PS/2 cable photo (F) used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/PS/2_connector#/media/File:PS2_connector-black_male-_tilted_close_up_PNr%C2%B00061.jpg" id="_i_9" lang="" target="_blank">Wikipedia</a>. RJ-11 (telephone modem) cable photo (G) used under CC-BY-NC-ND license from<span> </span><a href="https://www.flickr.com/photos/21561428@N03/5185781936/in/photolist-8Ufuio-8qGc-atbvL-5ZKcW4-5Y7Adn-4rEoKY-7rWZTs-bsaHie-FpDPd-7TiY7r-pJZkq7-bwT2Gy-2QWape-a5fgB8-g7y1Z-BBCT3-eafLpm-eirR7m-8oe1ke-4F9rNQ" id="_i_10" lang="" target="_blank">Lori Semprevio</a>. RJ-45 cable photo (H) used under CC-BY-NC-ND license from<span> </span><a href="https://www.flickr.com/photos/grfgabriel/1367982267/in/photolist-35Tgta-9YkFYc-ddjNYw-dySbpQ-4kwL1C-7G1vZe-4qFg1h-7G1vC4-98PUSz-cPgSR7-7MFqJv-5Bm9TU-5XQRi7-5SA6Je-38FMHr-6XuiQL-nSUKdZ-u4Nhk-9h8aDP-6QfmBW-7HHgQg-3qjQQa-eLNNT8-4vA6o6-9W1SXa-4rmqJu-gFyDk-tfpXk-5MBjL1-q2aq2-ouKvTs-8GU63y-rkHDtZ-Je5v9-bvAmJM-5hYtRT-cxED3-hg6h-5dS79F-hTyarU-5dWxNq-2QT3Z-3WYw6m-rpXi24-2obJ8y-ubPft-uwKhG-67N1ZV-5CE5ae-dWWQXm" id="_i_11" lang="" target="_blank">Gabriel R F</a>. USB Cable photo (I) used under public domain from<span> </span><a href="https://hy.wikipedia.org/wiki/%D5%84%D5%A1%D5%BD%D5%B6%D5%A1%D5%AF%D5%AB%D6%81:Vlooo#/media/File:USB-Connector-Standard.jpg" id="_i_12" lang="" target="_blank">Wikipedia</a>. HDMI cable photo (J) used under public domain from<span> </span><a href="http://www.clipartoday.com/freeclipart/computer/computer/computer_10004.html" id="_i_13" lang="" target="_blank">Clipart Today</a>. Mini stereo cable photo (K) used under public domain from<span> </span><a href="http://www.clipartoday.com/freeclipart/computer/hardware/computercable_12929.html" id="_i_14" lang="" target="_blank">Clipart Today</a>.</p>
+</div>
+<p></p>
+<p id="N1079E" lang="">The chart below describes the functions of the connectors depicted in the image above.</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang="">CONNECTOR</td>
+<td lang="">NAME</td>
+<td lang="">FUNCTION</td>
+</tr>
+<tr>
+<td lang="">A</td>
+<td lang="">DB-9 serial</td>
+<td lang="">Used for serial devices such as a mouse or external modem.</td>
+</tr>
+<tr class="e">
+<td lang="">B</td>
+<td lang="">DB-25 parallel</td>
+<td lang="">Used to connect printers.</td>
+</tr>
+<tr>
+<td lang="">C</td>
+<td lang="">DB-15<span> </span><em class="bold" lang="">(two rows of pin receptacles)</em></td>
+<td lang="">Used to connect joysticks or<span> </span><em class="bold" lang="">musical instrument digital interface<span> </span></em>(MIDI) devices.</td>
+</tr>
+<tr class="e">
+<td lang="">D</td>
+<td lang="">High-density DB-15<span> </span><em class="bold" lang="">(three rows of pins)</em></td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">video graphics array</em><span> </span>(VGA) and<span> </span><em class="bold" lang="">super VGA</em><span> </span>(SVGA) display device.</td>
+</tr>
+<tr>
+<td lang="">E</td>
+<td lang="">DVI video</td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">digital video interface (DVI)</em><span> </span>display monitor.</td>
+</tr>
+<tr class="e">
+<td lang="">F</td>
+<td lang="">6-pin mini-DIN</td>
+<td lang="">Used for PS/2 keyboards and mice. By convention, purple connectors are used for keyboards and green connectors are used for mice.</td>
+</tr>
+<tr>
+<td lang="">G</td>
+<td lang="">RJ-11 (four wires inside plug interface)</td>
+<td lang="">Used for internal modem or telephone.</td>
+</tr>
+<tr class="e">
+<td lang="">H</td>
+<td lang="">RJ-45<span> </span><em class="bold" lang="">(eight wires inside jack interface)</em></td>
+<td lang="">Used to connect to an Ethernet network.</td>
+</tr>
+<tr>
+<td lang="">I</td>
+<td lang="">USB type A</td>
+<td lang="">Used for external<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) devices such as printers and storage devices.</td>
+</tr>
+<tr class="e">
+<td lang="">J</td>
+<td lang="">HDMI</td>
+<td lang="">Used to connect a<span> </span><em class="bold" lang="">high definition multimedia interface (HDMI)</em><span> </span>display monitor.</td>
+</tr>
+<tr>
+<td lang="">K</td>
+<td lang="">Mini Stereo</td>
+<td lang="">Also known as "1/8 inch" or "3.5 mm" connectors, these are used to connect audio devices such as headphones and speakers.</td>
+</tr>
+</tbody>
+</table>
+<p>外圍設備通過標準端口連接到計算機。端口允許信息作為輸入和輸出子系統的一部分流入或流出計算機。外部設備（例如鍵盤，鼠標，打印機，掃描儀，存儲設備，顯示器和其他設備）可以通過各種類型的電纜連接到計算機，這些電纜連接到特定的端口。在大多數現代系統上，這已簡化為通用的標準接口，即通用串行總線端口（USB端口）。較舊的系統具有用於各種功能的各種端口，這些端口現在稱為傳統端口，例如PS / 2，串行和並行端口。它們很難配置，並且需要專用於它們的硬件資源，例如中斷請求，直接內存訪問和特定的I / O（輸入/輸出）端口地址。在USB中，這全部由操作系統自動處理。這使得在當前系統中很少發生硬件衝突。許多客戶仍將擁有帶有舊端口的計算機。因此，了解多個端口和連接很重要。</p>
+<p>下面的照片提供了主板端口集群的特寫視圖。</p>
+<p><br/>謝德敏（Edmund Tse）根據CC-BY許可使用的端口群集照片。由Wikimedia Commons按照CC-BY-SA許可使用的Firewire端口照片。<br/>下表描述了上圖中描繪的端口的功能。</p>
+<p>端口名稱功能<br/>PS / 2用於連接鍵盤和鼠標。<br/>B USB用於通過通用串行總線（USB）連接器連接外部設備，例如鼠標，鍵盤，打印機和存儲設備。<br/>C S / PDIF光纖用於連接數字高保真音頻系統。<br/>D HDMI用於連接高清多媒體接口（HDMI）。<br/>E VGA用於連接視頻圖形陣列（VGA）顯示設備。<br/>F DVI用於連接數字視頻接口（DVI）顯示設備。<br/>G USB用於將外部設備與通用串行總線（USB）連接器相連，例如鼠標，鍵盤，打印機和存儲設備。<br/>H IEEE 1394用於連接外部FireWire設備，例如硬盤驅動器和相機。<br/>I RJ-45用於連接到以太網。<br/>J USB用於將外部設備與通用串行總線（USB）連接器相連，例如鼠標，鍵盤，打印機和存儲設備。<br/>K音頻用於連接揚聲器系統。<br/>下圖顯示了各種類型的連接器。</p>
+<p>11種不同類型的連接器的照片。圖像A：串行DB-9電纜。連接器有兩排藍色塑料插針插座。上排有四個插腳插座，下排有五個插腳插座。連接器上有一個帶螺絲的白色塑料外殼。圖像B：DB-25並行電纜。金屬連接器有兩排插針。頂行有十二個引腳，而底行有十三個引腳。連接器上有一個帶螺絲的白色塑料外殼。圖像C：DB-15電纜。金屬連接器有兩排插針，第一排為8針，第二排為7針。金屬連接器的外部有一個黑色塑料外殼。圖像D：VGA電纜連接器。它是一種金屬連接器，具有三排引腳，每排五個引腳。連接器上有一個帶螺絲的藍色塑料外殼。圖像E：DVI電纜連接器。它是帶有兩組引腳的金屬連接器。每組有九個引腳。還有一個小的水平金屬界面。連接器上有一個帶螺絲的白色塑料外殼。圖像F：PS / 2電纜。 PS / 2電纜的圓形末端帶有六個排成一圈的插針插座。圓心有一個稍大的矩形插座。圖像G：RJ-11（電話調製解調器）電纜。它具有帶標籤的透明塑料連接器。彩色的較小電纜在內部可見。圖像H：RJ-45電纜。它具有透明的塑料連接器。彩色的較小電纜在內部可見，每個電纜都有銅端。圖像I：USB連接器。具有類似形狀的塑料插件的金屬矩形連接器，佔據了金屬連接開口的一部分。黑色塑料外殼環繞著金屬連接。圖像J：HDMI電纜。它是黑色塑料電纜，末端帶有金屬連接器。圖像K：迷你立體聲電纜。它是黑色電纜，帶有綠色塑料端，末端帶有圓形金屬連接器。<br/>圖片來源：Terry Chay。 DB-25並行電纜照片（B），來自剪貼畫今日在公共領域使用。 DB-15電纜照片（C）在維基百科的公共領域使用。 VGA電纜照片（D）在來自Clipart Now的公共領域圖像下使用。 DVI電纜照片（E），來自Clipart Today的公共領域中使用。 PS / 2電纜照片（F）已獲得Wikipedia的CC-BY-SA許可。 RJ-11（電話調製解調器）電纜照片（G），根據Lori Semprevio的CC-BY-NC-ND許可使用。 Gabriel R F的CC-BY-NC-ND許可下使用的RJ-45電纜照片（H）。Wikipedia的公共領域下使用的USB電纜照片（I）。剪貼畫今天在公共領域使用的HDMI電纜照片（J）。迷你立體聲電纜照片</p>
+<br />p.6 << <a href='p.6.html'>Previous</a> <a href='p.8.html'>Next</a> >> p.8</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

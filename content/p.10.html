@@ -1,0 +1,216 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923138 CP2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923138 CP2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='test.html'>test</a></li></li></ul></ul><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w8.html'>w8</a></li></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='U1.html'>U1</a><ul class='dropdown'><li><a href='p.1-1.html'>p.1-1</a><li><a href='p.2-1.html'>p.2-1</a></li></ul><li class='has-children'><a href='U2.html'>U2</a><ul class='dropdown'><li><a href='p.1-2.html'>p.1-2</a><li><a href='p.2-2.html'>p.2-2</a><li><a href='p.3.html'>p.3</a><li><a href='p.4.html'>p.4</a><li><a href='p.5.html'>p.5</a><li><a href='p.6.html'>p.6</a><li><a href='p.7.html'>p.7</a><li><a href='p.8.html'>p.8</a><li><a href='p.9.html'>p.9</a><li><a href='p.10.html'>p.10</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">p.9 << <a href='p.9.html'>Previous</a> <br /><h1>p.10</h1>
+<p>Serial Ports</p>
+<p id="N1068F" lang="">Serial ports, also known as COM or RS-232 ports, were used heavily in the 1980s and 1990s for serial communication as input/output ports. They were often used for external modems, mice, trackballs, touchpads, plotters, label printers, dot-matrix printers, PDA (Palm Pilot) docking stations, digital cameras, and PC-to-PC connections. USB has replaced serial ports for all of these uses in modern computers, but some people still have a need for a serial port. If your computer doesn’t have a serial port (which is very common in modern machines), you can add one using an expansion card or a USB to serial adapter. Serial ports come in two varieties: DB-25 (containing 25 pins) and DB-9 (containing nine pins). The DB-9 variety is the most common in use. Serial ports are generally slow, since they send data one bit at a time over the wire. There is no standard serial cable pinout; instead, they are created for the application they are used for, such as a null-modem cable to connect two computers directly, or a modem cable to connect the computer to an external modem. The most common variety of serial cable in use today is the CISCO rollover cable, which has a nine-pin serial port on one end and an RJ-45 connector (like a network cable) on the other end. This cable is used to connect a computer to a CISCO router or switch for configuration tasks.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of the connector on a      serial cable. The connector is slightly oval and has nine male pins (one      row of five pins and one row of four pins)." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image38.png" title="Photograph of the connector on a      serial cable. The connector is slightly oval and has nine male pins (one      row of five pins and one row of four pins)."/></span><span class="caption" lang="">Serial cable connector. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/bCVXoJ" id="_i_1" lang="" target="_blank">Brad</a><a href="https://flic.kr/p/bCVXoJ" id="_i_2" lang="" target="_blank">Wilmot</a>.</span></div>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a serial port. The      port is slightly oval and has female receptacles for nine male pins (one      row of five pins and one row of four pins). Each receptacle is numbered      using numerals 1through 9." class="popimg" id="_i_3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image39.png" title="Photograph of a serial port. The      port is slightly oval and has female receptacles for nine male pins (one      row of five pins and one row of four pins). Each receptacle is numbered      using numerals 1through 9."/></span><span class="caption" lang="">Serial port. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/5h619P" id="_i_4" lang="" target="_blank">yum</a><a href="https://flic.kr/p/5h619P" id="_i_5" lang="" target="_blank">9 me</a>.</span></div>
+<div class="imagewrap"><span class="caption" lang="">串行端口，也稱為COM或RS-232端口，在1980年代和1990年代被大量用於串行通信，作為輸入/輸出端口。它們通常用於外部調製解調器，鼠標，軌跡球，觸摸板，繪圖儀，標籤打印機，點矩陣打印機，PDA（Palm Pilot）擴展塢，數碼相機以及PC到PC的連接。 USB已取代了現代計算機中所有這些用途的串行端口，但是有些人仍然需要串行端口。如果您的計算機沒有串行端口（這在現代計算機中很常見），則可以使用擴展卡或USB到串行適配器添加一個。串行端口有兩種：DB-25（包含25個引腳）和DB-9（包含9個引腳）。 DB-9品種是最常用的品種。串行端口通常很慢，因為它們一次通過有線發送數據一位。沒有標準的串行電纜引出線。而是為它們所使用的應用程序創建它們，例如直接連接兩台計算機的零調製解調器電纜，或將計算機連接到外部調製解調器的調製解調器電纜。當今使用的最常見的串行電纜是CISCO翻轉電纜，其一端有一個9針串行端口，而另一端有一個RJ-45連接器（如網絡電纜）。該電纜用於將計算機連接到CISCO路由器或交換機以執行配置任務。<br/><br/>串行電纜上連接器的照片。該連接器略呈橢圓形，具有九個公引腳（一排五個引腳，一排四個引腳）。<br/>串行電纜連接器。由BradWilmot根據CC-BY-NC-ND許可使用的照片。<br/>串口的照片。該端口略呈橢圓形，並具有用於9個公引腳的母插座（一排五個引腳和一排四個引腳）。每個插座使用數字1到9編號。<br/>串行端口。由yum9我根據CC-BY-NC-ND許可使用的照片。</span></div>
+<div class="imagewrap"><span class="caption" lang="">Parallel Ports</span></div>
+<div class="imagewrap">
+<p id="N106BB" lang="">Parallel ports, also known as LPT (line printer terminal) ports, were used heavily in the 1980s and 1990s for parallel communication as input/output ports. They were often used for printers and scanners. USB has replaced parallel ports for all of these uses in modern computers, and few people will still have a need for a parallel port in contemporary computing. If your computer doesn’t have a parallel port (which is very common in modern machines), you could add one using an expansion card or a USB to parallel adapter. Parallel ports come in a standard DB-25 (containing 25 pins) cable. Other varieties of cables exist, including a DB-25 to Centronics 36-pin cable (common with printers), DB-25 to DB-25 cable (common with switchboxes), and DB-25 to DB-25 with the transmit/receive pins reversed (common for computer to computer connections for data transfer). Parallel ports are generally faster than serial ports, since they send data in parallel with eight bits at a time going over the wire. Parallel ports can be configured as output only or bidirectional ports. The ports are also configured as EPP (enhanced parallel port), ECP (enhanced capabilities port), and EPP/ECP. Under EPP, the port uses interrupt request (IRQ) and I/O addresses for fastest speeds. In ECP, the port can support daisy-chaining of devices and uses IRQ, I/O address, and DMA channels, and is considered resource hungry. EPP/ECP combines both modes into a single configuration, allowing for maximum compatibility. Parallel ports transmit data at up to two Mbps and receive data at 500 Kbps, which is very slow by today’s standards.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a parallel port on      the back of a computer. The port is slightly oval and has female      receptacles. Two additional serial ports are also      depicted." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image40.png" title="Photograph of a parallel port on      the back of a computer. The port is slightly oval and has female      receptacles. Two additional serial ports are also      depicted."/></span><span class="caption" lang="">Parallel port. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/dkztR" id="_i_7" lang="" target="_blank">Ryan</a><a href="https://flic.kr/p/dkztR" id="_i_8" lang="" target="_blank">Franklin</a>.</span></div>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a the connector on      a parallel cable. It is slightly oval and has numerous male      pins." class="popimg" id="_i_9" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image41.png" title="Photograph of a the connector on      a parallel cable. It is slightly oval and has numerous male      pins."/></span><span class="caption" lang="">Parallel cable. Photo used under CC-BY-ND license from<span> </span><a href="https://flic.kr/p/cgeek" id="_i_10" lang="" target="_blank">Don</a><a href="https://flic.kr/p/cgeek" id="_i_11" lang="" target="_blank">Lockton</a>.</span></div>
+<div actguid="d87f2d170a0001dc0dc2aa7b15f363f4" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d170a0001dc0dc2aa7b15f363f4&amp;userGUID=40923138%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd10">
+<div class="activityhead">並行端口，也稱為LPT（行式打印機終端）端口，在1980年代和1990年代大量用於並行通信，作為輸入/輸出端口。它們通常用於打印機和掃描儀。 USB已經替代了並行端口，以用於現代計算機中的所有這些用途，並且在當代計算中仍然很少有人需要並行端口。如果您的計算機沒有並行端口（這在現代計算機中很常見），則可以使用擴展卡或USB到並行適配器添加一個。並行端口採用標準的DB-25（包含25針）電纜。還存在其他種類的電纜，包括DB-25至Centronics 36針電纜（與打印機共用），DB-25至DB-25電纜（與配電箱共用）以及具有發送/接收功能的DB-25至DB-25引腳顛倒（計算機到計算機的連接通常用於數據傳輸）。並行端口通常比串行端口快，因為並行端口一次通過8位並行發送數據。並行端口可以配置為僅輸出端口或雙向端口。這些端口還配置為EPP（增強型並行端口），ECP（增強功能端口）和EPP / ECP。在EPP下，端口使用中斷請求（IRQ）和I / O地址以獲得最快的速度。在ECP中，端口可以支持設備的菊花鏈連接，並使用IRQ，I / O地址和DMA通道，並且被認為是資源匱乏。 EPP / ECP將兩種模式組合為一個配置，以實現最大的兼容性。並行端口以高達2 Mbps的速率發送數據，並以500 Kbps的速率接收數據，按照當今的標準，這是非常慢的。<br/><br/>一個並行端口的照片在計算機背面的。該端口略呈橢圓形，並具有凹形插座。還描述了兩個附加的串行端口。<br/>並口。照片由RyanFranklin根據CC-BY許可使用。<br/>並行電纜上的連接器的照片。它略呈橢圓形，並有許多公針。<br/>平行電纜。照片由DonLockton根據CC-BY-ND許可使用。</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2d110a0001dc54b26764f1b37aa9" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d110a0001dc54b26764f1b37aa9&amp;userGUID=40923138%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd09">
+<div class="activityhead"></div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<p lang=""></p>
+<p lang=""></p><br />p.9 << <a href='p.9.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
